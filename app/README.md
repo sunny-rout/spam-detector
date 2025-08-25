@@ -19,10 +19,14 @@ spam-detector-api/
 │   ├── utils/                   # Utilities
 │   │   ├── validators.py       # Input validation
 │   │   └── logger.py           # Logging configuration
-│   
+│   └── config/                  # Configuration management
+│       └── settings.py         # App settings
 ├── tests/                       # Test suite
 │   ├── test_api.py             # API tests
 │   └── test_detector.py        # Algorithm tests
+├── docs/                        # Documentation
+│   ├── api_documentation.md
+│   └── deployment_guide.md
 ├── deployment/                  # Deployment files
 │   ├── Dockerfile
 │   ├── docker-compose.yml
@@ -30,9 +34,9 @@ spam-detector-api/
 ├── logs/                        # Log files (created at runtime)
 ├── requirements.txt             # Python dependencies
 ├── run.py                      # Application entry point
-├── config.py                   # Environment configuration
 ├── README.md                   # This file
 └── .env.example                # Environment variables template
+
 ```
 
 ## ✨ Features
@@ -571,10 +575,6 @@ export FLASK_DEBUG=1
 python run.py
 ```
 
-## 📄 License
-
-This project is licensed under the MIT License. See `LICENSE` file for details.
-
 ## 🙋‍♂️ Support
 
 For support and questions:
@@ -582,7 +582,6 @@ For support and questions:
 1. **Documentation**: Check the `docs/` directory
 2. **Issues**: Submit GitHub issues for bugs
 3. **Discussions**: Use GitHub discussions for questions
-4. **Email**: Contact the development team
 
 ## 🚀 What's Next?
 

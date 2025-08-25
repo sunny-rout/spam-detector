@@ -5,7 +5,7 @@ Comprehensive test suite for all API endpoints.
 import pytest
 import json
 from app import create_app
-from config import TestingConfig
+from app.config.settings import TestingConfig
 
 
 @pytest.fixture
